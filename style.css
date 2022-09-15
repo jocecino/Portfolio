@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+
+@font-face {
+    font-family: 'Baby';
+    src: url('Fontes/Baby\ Aletha.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cor0: #FCC22D;
+    --cor1: #FFC212;
+    --cor2: #942248;
+    --cor4: #FC27A7;
+    --cor5: #E1F25C;
+    --cor6: #5b4bc5;
+    --cor7: #079DD9;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-baby: 'Baby', cursive;
+    --fonte-destaque: 'Tiro Devanagari Marathi', serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    background-color:var(--cor4);
+    min-height: 10px;
+    padding: 20px;
+    margin: auto;
+}
+header > picture{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-items: flex-start;
+    height: 1px;
+}
+header > h1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    color: var(--cor2);
+    font-family: var(--fonte-baby);
+    text-align: center;
+    font-size: 5em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.521);
+}
+header > p {
+    grid-column-start:2;
+    grid-column-end: 3;
+    margin: auto;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    color: var(--cor2);
+    text-align: center;
+    max-width: 600px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
+}
+
+header img.foto{
+    border-radius:50%; height: 100px;
+    border: 5px solid var(--cor6);
+}
+
+header > span {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: var(--fonte-destaque);
+    color:white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+header > span img {
+    justify-content: center ;
+    text-align: center;
+    margin: 20px;
+    height: 50px;
+    height: 50px;
+}
+header  span  p {
+    margin-top: -23px;
+}
+
+nav{
+    background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 1px 7px 9px rgba(0, 0, 0, 0.322);
+}
+
+nav a{
+    display: inline-block;
+    font-size: 20px;
+    font-family: var(--fonte-destaque);
+    color:white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    min-inline-size: 10px;
+}
+nav a:hover{
+    color: var(--cor2);
+
+}
