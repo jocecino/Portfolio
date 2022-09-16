@@ -7,6 +7,7 @@
     src: url('Fontes/Baby\ Aletha.otf') format('opentype');
     font-weight: normal;
 }
+
 :root{
     --cor0: #FCC22D;
     --cor1: #FFC212;
@@ -31,9 +32,10 @@ header{
     grid-template-columns: 1fr 4fr;
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     background-color:var(--cor4);
-    min-height: 150px;
     padding: 20px;
     margin: auto;
+    min-width: 1050px;
+    height: auto;
 }
 header > picture{
     display: flex;
@@ -86,8 +88,6 @@ header > span {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-
-
 }
 header > span img {
     justify-content: center ;
@@ -104,9 +104,9 @@ nav{
     background-color: var(--cor6);
     padding: 10px;
     box-shadow: 1px 7px 9px rgba(0, 0, 0, 0.322);
-    min-width: 300px;
+    min-width: 1070px;
     margin: auto;
-    padding: 10px;
+    font-size: min(18px, 5vw);
 }
 
 nav a{
@@ -122,5 +122,36 @@ nav a{
 }
 nav a:hover{
     color: var(--cor2);
-
 }
+@media only screen and (max-width:1090px){
+    header {
+        justify-content: center;
+        min-width: 780px ; } 
+     nav{
+            min-width: 780px;
+            margin: auto;
+            font-size: min(10px, 5vw);}
+    header > span{
+        display: none;
+        visibility: hidden;
+    }
+    header > h1 {
+        text-align: center;
+
+    }
+    @media only screen and (max-width:830px){
+    nav > a{
+      display:flex;
+      padding: 1px;
+    }
+    header > picture {
+        display: none;
+        visibility: hidden;
+    }
+    header{
+        display: block;
+        justify-items: center;
+    padding: 5px;
+    }
+    }
+    }
