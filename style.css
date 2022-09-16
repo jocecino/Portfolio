@@ -13,6 +13,7 @@
     --cor0: #FCC22D;
     --cor1: #FFC212;
     --cor2: #942248;
+    --cor3: #ac1b72;
     --cor4: #FC27A7;
     --cor5: #E1F25C;
     --cor6: #5b4bc5;
@@ -135,6 +136,8 @@ nav a{
 nav a:hover{
     color: var(--cor2);
 }
+/* Inico da media query*/
+
 @media only screen and (max-width:1090px){
     header {
         grid: unset;
@@ -165,7 +168,7 @@ header{
     }  
 header > h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: normal;
     margin-bottom: 20px;
     }
@@ -181,14 +184,63 @@ header > picture {
     position: absolute;
 }
 nav{
-    padding: 10px;
-    box-shadow: 1px 7px 9px rgba(0, 0, 0, 0.445);
+    padding: 5px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.445);
     transition-duration: .5s;
 }
 nav a {
-    padding: 10px;
+    padding: 4px;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
+    margin: 4px;
 }
+}
+}
+
+/* Inico do style do main */
+main{
+    background-color:var(--cor7);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445)
+}
+main  p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+main strong {
+    font-weight: bold;
+}
+main article img.logo{
+    height: 150px;
+    float: left;
+    max-width: 186px;
+    
+}
+main a {
+    text-decoration: none;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+main article  h1 {
+    text-align: center;
+    color:var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    background-image: linear-gradient(to bottom, var(--cor6), transparent);
+}
+main article > h2 {
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1), transparent);
+    text-indent: 8px;
 }
