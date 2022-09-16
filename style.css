@@ -6,6 +6,7 @@
     font-family: 'Baby';
     src: url('Fontes/Baby\ Aletha.otf') format('opentype');
     font-weight: normal;
+
 }
 
 :root{
@@ -99,7 +100,18 @@ header > span img {
 header  span  p {
     margin-top: -23px;
 }
-
+.login-button button{
+    border: none;
+    background-color: #FC27A7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
 nav{
     background-color: var(--cor6);
     padding: 10px;
@@ -125,33 +137,58 @@ nav a:hover{
 }
 @media only screen and (max-width:1090px){
     header {
-        justify-content: center;
-        min-width: 780px ; } 
-     nav{
-            min-width: 780px;
-            margin: auto;
-            font-size: min(10px, 5vw);}
-    header > span{
-        display: none;
-        visibility: hidden;
-    }
-    header > h1 {
+        grid: unset;
+        display: block;
         text-align: center;
-
-    }
-    @media only screen and (max-width:830px){
-    nav > a{
-      display:flex;
-      padding: 1px;
+        justify-content: center;
+        height: 100%;
+        min-width: unset;
     }
     header > picture {
+        position: absolute;
+        top:8;
+        left: 16px;
+    }
+    nav {
+        min-width: unset;
+    }
+
+
+@media only screen and (max-width: 1038px){
+header > span > a{
         display: none;
-        visibility: hidden;
+        visibility: hidden;}
+header{
+    justify-items: center;
+        min-height: 150px;
+        padding: 20px;
+    }  
+header > h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
     }
-    header{
-        display: block;
-        justify-items: center;
-    padding: 5px;
-    }
-    }
-    }
+header > p {
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+}
+header > picture {
+    display: contents;
+    width: auto;
+    position: absolute;
+}
+nav{
+    padding: 10px;
+    box-shadow: 1px 7px 9px rgba(0, 0, 0, 0.445);
+    transition-duration: .5s;
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+}
