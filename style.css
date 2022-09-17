@@ -144,7 +144,7 @@ nav a:hover{
         min-width: unset;
     }
 
-
+/* Tamanho mobile*/
 @media only screen and (max-width: 1038px){
 header > span > a{
         display: none;
@@ -184,7 +184,34 @@ nav a {
 }
 }
 }
+/* media tamanho mobile 960px*/
 
+@media only screen and (max-width: 470px){
+main article a img.logo {
+    height: 116px;
+    float: left;
+    max-width: 186px;
+    margin-top: -2px;
+}
+
+main article ul {
+    margin: 5px 0px;
+    text-align: justify;
+    text-indent: 8px;
+    font-size: 1em;
+    line-height: 0.8em;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+ main article > h2 {
+        font-family: var(--fonte-padrao);
+        color: var(--cor2);
+        font-size: 0.5em;
+        font-weight: normal;
+        background-image: linear-gradient(to right, var(--cor6), var(), transparent);
+        text-indent: 5px;
+}
+}
 /* Inico do style do main */
 main{
     background-color:var(--cor7);
@@ -252,3 +279,4 @@ main p {
     justify-content: center;
     margin-bottom: 30px;
 }
+
