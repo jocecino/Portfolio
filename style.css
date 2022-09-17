@@ -101,18 +101,6 @@ header > span img {
 header  span  p {
     margin-top: -23px;
 }
-.login-button button{
-    border: none;
-    background-color: #FC27A7;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-.mobile-menu-icon{
-    display: none;
-}
-.mobile-menu{
-    display: none;
-}
 nav{
     background-color: var(--cor6);
     padding: 10px;
@@ -206,26 +194,36 @@ main{
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445)
 }
-main  p {
+main article ul li{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
     margin: 15px 0px;
     text-align: justify;
     text-indent: 10px;
     font-size: 1.5em;
-    line-height: 2em;
+    line-height: 1.2em;
+    justify-content: center;
+    margin-bottom: 30px;
+    
 }
 main strong {
     font-weight: bold;
 }
 main article img.logo{
-    height: 150px;
+    height: 200px;
     float: left;
     max-width: 186px;
+    margin-top: -32px;
     
 }
 main a {
     text-decoration: none;
     padding: 2px 6px;
     border-radius: 10px;
+}
+main a:hover{
+    color: white;
+
 }
 main article  h1 {
     text-align: center;
@@ -238,9 +236,19 @@ main article  h1 {
 }
 main article > h2 {
     font-family: var(--fonte-padrao);
-    color: var(--cor3);
-    font-size: 1.3em;
+    color: var(--cor2);
+    font-size: 2em;
     font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor2), var(--cor1), transparent);
+    background-image: linear-gradient(to right, var(--cor6), var(), transparent);
     text-indent: 8px;
+    
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    justify-content: center;
+    margin-bottom: 30px;
 }
