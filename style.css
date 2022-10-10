@@ -29,6 +29,11 @@
     margin: 0px;
     padding: 0px;
 }
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+}
+
 header{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -143,7 +148,7 @@ nav a:hover{
     nav {
         min-width: unset;
     }
-
+}
 /* Tamanho mobile*/
 @media only screen and (max-width: 1038px){
 header > span > a{
@@ -183,10 +188,10 @@ nav a {
     margin: 4px;
 }
 }
-}
+
 /* media tamanho mobile 960px*/
 
-@media only screen and (max-width: 470px){
+@media screen and (max-width: 470px){
 main article a img.logo {
     height: 116px;
     float: left;
@@ -210,6 +215,10 @@ main article ul {
         font-weight: normal;
         background-image: linear-gradient(to right, var(--cor6), var(), transparent);
         text-indent: 5px;
+}
+main article h1 {
+    font-size: 1.5em;
+    line-height: 0.8em;
 }
 }
 /* Inico do style do main */
@@ -279,4 +288,3 @@ main p {
     justify-content: center;
     margin-bottom: 30px;
 }
-
